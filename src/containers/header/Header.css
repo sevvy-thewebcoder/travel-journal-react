@@ -1,0 +1,14 @@
+.Header__Section {
+    padding: 2rem clamp(1rem, 2.5vw, 3rem);
+    background-color: #ff5050;
+    color: #FFFFFF;
+}
+
+.Header__Section-Title {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+}

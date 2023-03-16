@@ -1,0 +1,12 @@
+
+
+.Travel__Section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 2rem;
+    padding: clamp(3rem, 2.5vw, 5rem) clamp(1rem, 2.5vw, 3rem);
+    max-width: 800px;
+    margin: 0 auto;
+}

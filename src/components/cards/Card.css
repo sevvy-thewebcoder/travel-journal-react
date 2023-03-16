@@ -1,5 +1,5 @@
 .Card {
-    padding: clamp(1rem, 2.5vw, 3rem);
+    padding: clamp(2rem, 6.2vw, 3rem);
     border-radius: 5px;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
     display: flex;
@@ -7,12 +7,15 @@
     justify-content: center;
     align-items: center;
     gap: 3rem;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .Card__Image-Container {
     max-width: 400px;
     width: 100%;
-    height: clamp(120px, 40vw, 200px);
+    height: clamp(140px, 40vw, 200px);
     border-radius: 5px;
     box-sizing: border-box;
     overflow: hidden;
@@ -47,8 +50,9 @@
     gap: 1rem;
 }
 
-.Card__Data-Top .Card__Location {
-    font-size: 1rem;
+.Card__Data-Top 
+.Card__Location {
+    font-size: clamp(1rem, 3vw, 1.4rem);
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 400;
@@ -66,12 +70,12 @@
 
 .Card__Data-Top
 .Card__Location-Link {
-    font-size: clamp(1rem, 2vw, 1.2rem);
+    font-size: clamp(1rem, 3vw, 1.4rem);
     color: #918E9B;
 }
 
 .Card__Location-Title {
-    font-size: clamp(1.6rem, 3.5vw, 2.5rem);
+    font-size: clamp(2rem, 6.2vw, 3rem);
     font-weight: bolder;
 }
 
@@ -83,16 +87,20 @@
 
 .Card__Data-Bottom 
 .Card__Location-Travel_Time-Period {
-    font-size: 1.3rem;
+    font-size: clamp(1.3rem, 3.75vw, 1.6rem);
     font-weight: 900;
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
+.Card__Data-Bottom
+.Date {
+    color: #ff5050;
+}
 
 .Card__Data-Bottom
 .Card__Location-Desc {
-    font-size: clamp(1.2rem, 2.4vw, 1.4rem);
+    font-size: clamp(1.2rem, 3.75vw, 1.6rem);
     line-height: 1.6;
     text-align: justify;
 }
@@ -100,21 +108,16 @@
 @media screen and (min-width: 720px) {
     .Card {
         flex-direction: row;
-        justify-content: center;
+        max-width: 800px;
     }
     
     .Card__Image-Container {
         width: clamp(125px, 90vw, 200px);
-        height: clamp(200px, 90vw, 240px);
-        border-radius: 5px;
+        height: clamp(200px, 90vw, 250px);
     }
     
     .Card__Data {
         width: clamp(125px, 90vw, 400px);
-        height: clamp(200px, 90vw, 200px);
-    }
-    
-    .Card__Data-Top .Card__Location {
-        font-size: 1.2rem;
+        height: clamp(200px, 90vw, 250px);
     }
 }
